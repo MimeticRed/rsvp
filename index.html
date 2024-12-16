@@ -6,60 +6,92 @@
     <title>RSVP for the 50th Birthday Party</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #f3f4ed;
+            color: #2e2e2e;
             text-align: center;
         }
         header {
-            background-color: #ffcc00;
-            padding: 20px;
+            background-color: #6b8e23;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
-            color: #333;
+            font-size: 3rem;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://source.unsplash.com/1600x900/?vines') no-repeat center/cover;
+            opacity: 0.3;
+            z-index: 0;
+        }
+        header h1 {
+            position: relative;
+            z-index: 1;
         }
         main {
-            padding: 20px;
+            padding: 40px 20px;
         }
         form {
             max-width: 500px;
             margin: 0 auto;
             background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            border: 2px solid #6b8e23;
         }
-label {
+        label {
             display: block;
             margin-bottom: 10px;
             font-weight: bold;
+            color: #4b5320;
         }
-        input, textarea, button {
+          input, textarea, select, button {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            font-size: 1rem;
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: #6b8e23;
+            outline: none;
+            box-shadow: 0 0 4px rgba(107, 142, 35, 0.7);
         }
         button {
-            background-color: #ffcc00;
+            background-color: #6b8e23;
+            color: #fff;
             border: none;
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-weight: bold;
             cursor: pointer;
         }
         button:hover {
-            background-color: #e6b800;
+            background-color: #556b2f;
         }
-    </style>
+        p {
+            font-size: 1.2rem;
+            color: #4b5320;
+        }
+        </style>
 </head>
 <body>
     <header>
-      <h1>You're Invited!</h1>
+        <h1>You're Invited!</h1>
     </header>
     <main>
         <h2>50th Birthday Party RSVP</h2>
